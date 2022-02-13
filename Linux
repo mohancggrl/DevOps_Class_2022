@@ -1,0 +1,137 @@
+
+13-02-2022
+----------
+
+IP 
+
+
+
+IPv4   ---> 32 bin
+
+0.0.0.0 ----> 255.255.255.255
+
+
+Private IP
+Class A: 10.0.0.0 — 10.255.255.255   ---->     bulk re 
+
+Class B: 172.16.0.0 — 172.31.255.255 ---->   medium requirment
+
+Class C: 192.168.0.0 — 192.168.255.255  --   low
+
+
+
+Class	Address Range	Subnet masking	Example IP	Leading bits	Max number of networks	Application
+IP Class A	1 to 126	255.0.0.0	1.1.1.1	8	128	Used for large number of hosts.
+IP Class B	128 to 191	255.255.0.0	128.1.1.1	16	16384	Used for medium size network.
+IP Class C	192 to 223	255.255.255.0	192.1.11.	24	2097157	Used for local area network.
+IP Class D	224 to 239	NA	NA	NA	NA	Reserve for multi-tasking.
+IP Class E	240 to 254	NA	NA	NA	NA	This class is reserved for research and Development Purposes.
+
+
+Public IP
+Rest All
+
+
+
+
+IPv6
+
+
+
+3.83.91.178 
+
+
+172.31.86.126
+
+
+
+59.93.255.0
+
+192.168.10.0
+
+
+
+32
+
+?????
+65 cros
+
+
+
+172.31.86.126
+
+3.83.91.178
+
+
+
+IPv6
+2001:0db8:85a3:0000:0000:8a2e:0370:7334.
+
+
+
+user_name 
+Password
+
+
+user_name
+Private_key
+
+
+cli
+
+
+
+
+
+
+ssh <user_name>@<IP>
+Ex: ssh centos@3.83.91.178
+
+Centos   ---> centos
+Ubuntu   ----> ubuntu
+Windows  --->Administrator
+Rhel     ---> ec2-user
+
+
+ssh -i <path>/<private_key> <user_name>@<ip>
+
+ssh -i /c/Users/Mohan/Downloads/amaravathi_nv.pem centos@3.83.91.178
+
+ls
+
+ls -ltra
+
+ls -l
+ls -la
+
+
+[centos    @       ip-172-31-86-126     ~]    $
+
+
+
+[centos    @        ip-172-31-80-244    ~]$
+
+
+<username>         <hostname>          <path>
+
+
+
+~  ---> user home path
+
+# --> Root user
+$  ---> Normal user
+sudo su -   ---> To switch the root user
+
+
+Host name Change
+vi /etc/hostname
+ <ovaride with new hostname>
+ Ex: Devops_class
+vi /etc/hosts
+ <append ip with hostname>
+ Ex: 172.31.80.244 Devops_class
+ 
+hostname -F /etc/hostname
+
+
+hostnamectl	set-hostname <hostname>    ---> OS 7 vesions and above
